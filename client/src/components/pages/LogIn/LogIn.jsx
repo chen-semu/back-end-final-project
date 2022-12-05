@@ -13,7 +13,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import {useAdminData} from '../../../contexts/DataContext'
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -30,19 +30,22 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignInSide() {
-  
-  const [users,setUsers]=React.useState([]) 
 
-  React.useEffect(()=>{
-     fetch("http://localhost:8080/users")
-    .then(data=>data.json())
-    .then(usersData=>setUsers(usersData.massage))
-    .catch(error=>console.log(error))
-  },[])
+  const {signIn}=useAdminData()
+  
+  // const [users,setUsers]=React.useState([]) 
+
+  // React.useEffect(()=>{
+  //    fetch("http://localhost:8080/users")
+  //   .then(data=>data.json())
+  //   .then(usersData=>setUsers(usersData.massage))
+  //   .catch(error=>console.log(error))
+  // },[])
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    signIn.map(user)
     console.log({
       email: data.get('email'),
       password: data.get('password'),
@@ -52,7 +55,7 @@ export default function SignInSide() {
 
   return (
     <ThemeProvider theme={theme}>
-      {console.log(users)}
+      {console.log(signIn)}
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid
