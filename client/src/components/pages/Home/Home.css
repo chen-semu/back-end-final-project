@@ -1,0 +1,53 @@
+.home{background-color: whitesmoke;
+    display:grid;
+
+}
+#AdminAmountInfo{
+    margin: 1vw;
+    margin-top:10vw;
+    display: flex;
+    justify-content: space-around;
+}
+#profitChart{
+    margin:2vw;
+    padding: 5%;
+    margin-top:10vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#thirdLevelData{
+    display: flex;
+    margin-top:10vw;
+}
+
+
+@media screen and (max-width:576px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #thirdLevelData{
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+    #AdminAmountInfo{
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        align-content: space-around;
+
+    }
+    #profitChart{
+        width:90vw;
+        align-items: center;
+        height: unset;
+        padding: 0%;
+
+    }
+}

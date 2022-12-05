@@ -1,0 +1,6 @@
+.stores-data{background-color: white; width: 20%;}
+@media screen and (max-width:576px){
+    .stores-data{width: 90vw;
+        margin:2vw
+    }
+}

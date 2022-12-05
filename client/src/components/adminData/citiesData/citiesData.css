@@ -1,0 +1,7 @@
+.cities-data{background-color: white;
+width: 20%;}
+@media screen and (max-width:576px){
+    .cities-data{width: 90vw;
+        margin:2vw
+    }
+}

@@ -1,0 +1,6 @@
+.products-data{background-color: white; width: 20%;}
+@media screen and (max-width:576px){
+    .products-data{width: 90vw;
+        margin:2vw
+    }
+}
