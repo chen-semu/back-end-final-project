@@ -31,7 +31,7 @@ const theme = createTheme();
 
 export default function SignInSide() {
 
-  const {signIn}=useAdminData()
+  // const {signIn}=useAdminData()
   
   // const [users,setUsers]=React.useState([]) 
 
@@ -45,7 +45,7 @@ export default function SignInSide() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    signIn.map(user)
+    // signIn.map(user)
     console.log({
       email: data.get('email'),
       password: data.get('password'),
@@ -55,7 +55,7 @@ export default function SignInSide() {
 
   return (
     <ThemeProvider theme={theme}>
-      {console.log(signIn)}
+      {/* {console.log(signIn)} */}
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid

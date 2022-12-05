@@ -7,11 +7,13 @@ const fetchUsers= async ()=>{
     .catch((error)=>{console.log(error);})
   }
 
-  const signIn= async ()=>{
-    return await fetch(`${basicAPI}/users/log-in`)
-    .then(res=>res.json())
-    .catch((error)=>{console.log(error);})
+  // const signIn= async ()=>{
+  //   return await fetch(`${basicAPI}/users/log-in`)
+  //   .then(res=>res.json())
+  //   .catch((error)=>{console.log(error);})
+  // }
+
+
+  export {fetchUsers, 
+    // signIn
   }
-
-
-  export {fetchUsers, signIn}
