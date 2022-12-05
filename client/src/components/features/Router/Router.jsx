@@ -9,9 +9,9 @@ import SignUp from "../../pages/SignUp/SignUp.jsx";
 function Router() {
   return (
       <Routes>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='*' element={<PageNotFound/>}/>
-        <Route path='/' element={<LogIn/>}/>
+        <Route path='/home' element={<LogIn/>}/>
         <Route path='/Sign-Up' element={<SignUp/>}/>
       </Routes>
   );
