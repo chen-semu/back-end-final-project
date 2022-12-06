@@ -10,7 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import "./Header.css"
 function BasicExample() {
 
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -27,11 +27,11 @@ function BasicExample() {
     <Navbar bg="dark" varient="dark" expand="lg">
       <Container >
         <Navbar.Toggle className="bg-light" aria-controls="basic-navbar-nav" />
-        <Navbar.Brand className='text-light' href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand className='text-light' href="#home"><img id="logo_id" src="/pics/logo.png"/> MANCH</Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link className='text-light'  href="#"></Nav.Link>
-            <Nav.Link className='text-light' href="#home">Home</Nav.Link>
+            {/* <Nav.Link className='text-light' href="#home">Home</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
             <Toolbar disableGutters>

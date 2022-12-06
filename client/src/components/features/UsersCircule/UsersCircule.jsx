@@ -16,8 +16,8 @@ function UserCircle() {
   return (
 <div id="orderCircule">
 <CircularProgressbarWithChildren value={sum} maxValue={users.length}>
-  <div style={{ fontSize: 24, marginTop: -5 }}>
-    <strong>{sum}</strong> out of {users.length}
+  <div style={{ padding:25 ,fontSize: 22, marginTop: -5 }}>
+    <strong>{sum} active users</strong> out of {users.length} users
   </div>
 </CircularProgressbarWithChildren>
 </div>

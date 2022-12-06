@@ -16,8 +16,8 @@ function OrderCircule() {
   return (
 <div id="orderCircule">
 <CircularProgressbarWithChildren value={sum} maxValue={orders.length}>
-  <div style={{ fontSize: 24, marginTop: -5 }}>
-    <strong>{sum}</strong> out of {orders.length}
+  <div style={{ padding:22 , fontSize: 24, marginTop: -5 }}>
+    <strong>{sum}</strong> successful orders out of {orders.length}
   </div>
 </CircularProgressbarWithChildren>
 </div>
